@@ -8,13 +8,14 @@ import {
 } from "react-native";
 
 import { Feather } from '@expo/vector-icons'
+
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 65;
 export default function Header({ name }) {
     return (
         <View style={styles.container}>
             <View style={styles.content}>
                 <Text style={styles.username}>
-                    Olá { name } 🤑 </Text>
+                    Olá {name} 🤑 </Text>
 
                 <TouchableOpacity style={styles.buttonUser}>
                     <Feather name="user" size={27} color={"#fff"} ></Feather>
@@ -32,23 +33,23 @@ const styles = StyleSheet.create({
         paddingEnd: 16,
         paddingBottom: 44,
     },
-    content:{
+    content: {
         flex: 1,
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between'
     },
-    username:{
+    username: {
         fontSize: 18,
         color: '#fff',
         fontWeight: 'bold'
     },
-    buttonUser:{
+    buttonUser: {
         width: 44,
         height: 44,
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 44 / 2 ,
+        borderRadius: 44 / 2,
     }
 })

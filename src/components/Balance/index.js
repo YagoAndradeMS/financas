@@ -26,7 +26,7 @@ export default function Balance() {
                 </Text>
                 <View style={styles.content}>
                     <Text style={styles.currencySymbol}> R$</Text>
-                    <Text style={styles.expenses}>- 20.000,00 </Text>
+                    <Text style={styles.expenses}> 20.000,00 </Text>
                 </View>
             </View>
         </View>
